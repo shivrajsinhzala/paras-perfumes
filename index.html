@@ -1237,7 +1237,30 @@
         .features .section-title {
             color: var(--white);
         }
+/* ============ RESPONSIVE FIXES ============ */
+.navbar {
+    width: 100%;
+}
 
+.products-filter {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 650px) {
+    .products-filter {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+    
+    /* Optional: Fix hero title size for very small screens */
+    .hero-title {
+        font-size: 32px;
+    }
+}
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
